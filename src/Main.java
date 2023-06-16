@@ -12,10 +12,11 @@ public class Main {
     public static void main(String[] args){
         int botPounds = 10000;
         double exchangeRate;
-        int days = 1;
+        int days = 0;
 
-        while(botPounds != 0) {
-            System.out.println("\nDay number: " + days++);
+        while(botPounds != 0) { // oppure condizione botPounds > 0.
+            days++;
+            System.out.println("\nDay number: " + days);
 
             exchangeRate = 1 + (Math.random() * 0.2);
             System.out.println("Current exchange rate: " + exchangeRate);
